@@ -3,53 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>Courses Completed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="skills.html">My Skills</a>
-      <a href="courses.html">Couses Completed</a>
-      <a href="gallery.html">My Gallery</a>
+    <nav class="nav justify-content-center">
+      <a class="nav-item nav-link" href="index.html">Home</a>
+      <a class="nav-item nav-link" href="skills.html">My Skills</a>
+      <a class="nav-item nav-link" href="courses.html">Couses Completed</a>
+      <a class="nav-item nav-link" href="gallery.html">My Gallery</a>
     </nav>
 
-    <h3>Courses Completed</h3>
-    <table>
-      <tr>
-        <th>Course Number</th>
-        <th>Course Name</th>
-      </tr>
-      <tr>
+      <section class="container">
+        <h3 >Courses Completed</h3>
+      <div class="row">
 
-        <td>CS 172</td>
-        <td>Computer Science I</td>
-      </tr>
-      <tr>
+        <table class="table table-striped table-hover col-lg-6">
+          <thead class="thead-dark">
+            <tr>
+              <th>Course Number</th>
+              <th>Course Name</th>
+            </tr>
+          </thead>
+          <tr>
 
-        <td>CS 291</td>
-        <td>	Computer Science II  </td>
-      </tr>
-      <tr>
-        <td>CS 341</td>
-        <td>	Algorithms and Data Structures</td>
-      </tr>
-      <tr>
-        <td>CS 357</td>
-        <td>Principles of Programming Languages</td>
-      </tr>
-      <tr>
-        <td>CS 397</td>
-        <td> Assembly Language Programming </td>
-      </tr>
-      <tr>
-        <td>CS 451 </td>
-        <td>Operating Systems</td>
-      </tr>
-      <tr>
-        <td>CS 485</td>
-        <td>	Computer Architecture  </td>
-      </tr>
-    </table>
+            <td>CS 172</td>
+            <td>Computer Science I</td>
+          </tr>
+          <tr>
 
-    <img src="./images/waterfall.jpg" alt="waterfall" width="200px" height="180px">
+            <td>CS 291</td>
+            <td>	Computer Science II  </td>
+          </tr>
+          <tr>
+            <td>CS 341</td>
+            <td>	Algorithms and Data Structures</td>
+          </tr>
+          <tr>
+            <td>CS 357</td>
+            <td>Principles of Programming Languages</td>
+          </tr>
+          <tr>
+            <td>CS 397</td>
+            <td> Assembly Language Programming </td>
+          </tr>
+          <tr>
+            <td>CS 451 </td>
+            <td>Operating Systems</td>
+          </tr>
+          <tr>
+            <td>CS 485</td>
+            <td>	Computer Architecture  </td>
+          </tr>
+        </table>
+
+        <img class="col-lg-6" src="./images/waterfall.jpg" alt="waterfall" width="200px" height="370px">
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
