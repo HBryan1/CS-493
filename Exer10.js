@@ -49,10 +49,13 @@ function incrementCount() {
 let colors = ["red", "orange", "green", "blue", "maroon", "yellow"];
 let crl = document.getElementById("btnTwo");
 let bgcrl = document.getElementById("btnThree");
-let btn3 = document.getElementById("btnFour);
+let btn3 = document.getElementById("btnFour");
+let btn4 = document.getElementById("btnFive");
+let btn5 = document.getElementById("btnSix");
 let c = 0;
 crl.onclick = changeColor;
-bgcrl.onclick =changeBackGroundColor;
+bgcrl.onclick = changeBackGroundColor;
+
 
 function changeColor() {
     document.getElementById("paraTwo").style.color = colors[c];
@@ -67,9 +70,38 @@ function changeBackGroundColor() {
 
 btn3.onclick = function() {
     c = document.getElementById("txtNumber").value;
-    document.getElementById("paraFour").innerText = c;
+    
     let sum = 0;
-    for (i = 0; i < c; i++) {
+    for (i = 0; i <= c; i++) {
         sum = sum + i;
     }
+    document.getElementById("paraFour").innerText = sum;
+}
+
+let left;
+let right;
+btn4.onclick = function () {
+    left = document.getElementById("numberOne").value;
+    right = document.getElementById("numberTwo").value;
+
+    document.getElementById("paraFive").innerHTML = left * right;
+}
+
+btn5.onclick = function () {
+    let node = document.getElementById("listItem").value;
+    let li = document.createElement("li");
+    li.innerText = node;
+    document.getElementById("shoppingList").appendChild(li);
+
+}
+
+
+
+let btn = [];
+for (i = 0; i < document.getElementsByClassName("box").length; i++) {
+    btn = document.getElementsByClassName("box")[i];
+}
+
+btn.onclick = function () {
+    console.log(btn);
 }
